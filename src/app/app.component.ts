@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import Moment from 'moment';
+import * as moment from 'moment';
 
 // Siete delle merde
 
@@ -10,6 +10,9 @@ import Moment from 'moment';
 })
 export class AppComponent  {
   
-  myDate = Moment.unix(1318781876);
+  beforeBST = moment.unix(1585396800000);
+
+  duringBST = moment.unix(1585476000000);
+
 
 }
